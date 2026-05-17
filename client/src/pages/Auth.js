@@ -70,7 +70,7 @@ function Auth() {
       if (vo === false) {
         setError('An OTP has been send to your mail for verification')
         const datas = await sendmail(temail, name);
-        scs(true);
+        signUp();
       }
     }
   };
