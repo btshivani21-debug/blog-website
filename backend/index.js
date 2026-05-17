@@ -74,7 +74,6 @@ app.use(
 
 
 app.use("/", userRoutes);
-require("./servises/passport");
 app.use("/", uploadRoutes);
 app.use("/", postRoutes);
 
