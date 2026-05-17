@@ -1,5 +1,18 @@
 const dotenv = require("dotenv").config();
-const keys = require("./config/keys");
+require('dotenv').config();
+const keys = {
+  MONGO_URI: process.env.MONGO_URI,
+  COOKIE_KEY: process.env.COOKIE_KEY,
+  TOKEN_SECRET: process.env.TOKEN_SECRET,
+  CLOUD_NAME: process.env.CLOUD_NAME,
+  CLOUD_API_KEY: process.env.CLOUD_API_KEY,
+  CLOUD_API_SECRET: process.env.CLOUD_API_SECRET,
+  PASS: process.env.PASS,
+  EMAIL_ID: process.env.EMAIL_ID,
+  PORT: process.env.PORT,
+  BACKEND_URL: process.env.REACT_APP_BACKEND_URL,
+  FRONTEND_URL: process.env.REACT_APP_FRONTEND_URL
+};
 const Port = keys.PORT || 5002;
 const express = require("express");
 const app = express();
